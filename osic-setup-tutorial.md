@@ -7,23 +7,24 @@
    or <br>
    navigate to `Start > Settings > System > About`<br><br>
    Alternatively, you can also run the following <mark>PowerShell</mark> command:
+   
    ```
    systeminfo | findstr -r /C:"^OS Name:" /C:"^OS Version:"
    ```
    ---
    **Example**<br>
    I am using a Surface Book 3 with:
-   ```
+   ``` 
    OS Name:                       Microsoft Windows 11 Pro
    OS Version:                    10.0.26100 N/A Build 26100
    ```
    ---
 3. **Install WSL 2**<br><br>
-   To see the list of all avaliable Linux distribution use the following <mark>PowerShell</mark> command:<br>
+   To see the list of all avaliable Linux distribution use the following PowerShell command:<br>
    ```
    wsl.exe --list --online
    ```
-   To install the latest LTS Ubuntu distribution run the <mark>Power Shell</mark> command:
+   To install the latest LTS Ubuntu distribution run the Power Shell command:
    ```
    wsl.exe --install -d Ubuntu-24.04
    ```
@@ -32,7 +33,7 @@
    To avoid any confusion use a different username<br>
  
 4. **Start WSL**<br><br>
-   In general, to start using WSL, either open a <mark>PowerShell</mark> terminal and type:
+   In general, to start using WSL, either open a PowerShell terminal and type:
    ```
    wsl ~
    ```
@@ -42,7 +43,7 @@
    The Windows user's home directory is:<br>
    `/mnt/c/Users/<windows username>`<br><br>
 
-   To check the version of Ubuntu installed type the following command in the <mark>WSL</mark> terminal:<br>
+   To check the version of Ubuntu installed type the following Linux command in the WSL terminal:<br>
    ```
    cat /etc/os-release
    ```
@@ -62,7 +63,7 @@
    ```
    wsl --list --verbose
    ```
-   It is recommended that you regularly update and upgrade your packages. Type the following command in the <mark>WSL</mark> terminal:
+   It is recommended that you regularly update and upgrade your packages. Type the following Linux command in the WSL terminal:
    ```
    sudo apt update -y && sudo apt upgrade -y
    ```
