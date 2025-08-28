@@ -6,7 +6,7 @@
    To find the version of your Windows OS press the **`windows logo key + R`** and then type **`winver`** in the Run dialog box<br>
    or <br>
    navigate to `Start > Settings > System > About`<br><br>
-   Alternatively, you can also run the following PowerShell command:
+   Alternatively, you can also run the following <mark>PowerShell</mark> command:
    ```
    systeminfo | findstr -r /C:"^OS Name:" /C:"^OS Version:"
    ```
@@ -18,12 +18,12 @@
    OS Version:                    10.0.26100 N/A Build 26100
    ```
    ---
-2. **Install WSL 2**<br><br>
-   To see the list of all avaliable Linux distribution use the following PowerShell command:<br>
+3. **Install WSL 2**<br><br>
+   To see the list of all avaliable Linux distribution use the following <mark>PowerShell</mark> command:<br>
    ```
    wsl.exe --list --online
    ```
-   To install the latest LTS Ubuntu distribution run:
+   To install the latest LTS Ubuntu distribution run the <mark>Power Shell</mark> command:
    ```
    wsl.exe --install -d Ubuntu-24.04
    ```
@@ -31,8 +31,8 @@
    This UNIX username and password have no relationship to your Windows username and password.<br>
    To avoid any confusion use a different username<br>
  
-3. **Start WSL**<br><br>
-   In general, to start using WSL, either open a PowerShell terminal and type:
+4. **Start WSL**<br><br>
+   In general, to start using WSL, either open a <mark>PowerShell</mark> terminal and type:
    ```
    wsl ~
    ```
@@ -42,7 +42,7 @@
    The Windows user's home directory is:<br>
    `/mnt/c/Users/<windows username>`<br><br>
 
-   To check the version of Ubuntu installed type in the WSL terminal the following command:<br>
+   To check the version of Ubuntu installed type the following command in the <mark>WSL</mark> terminal:<br>
    ```
    cat /etc/os-release
    ```
@@ -54,7 +54,7 @@
    >`talarico@TALARICO-SRFCBK:~$ cd /mnt/c/Users/claudio/`<br>
    >`talarico@TALARICO-SRFCBK:/mnt/c/Users/claudio$`
    ---
-   To check which version of WSL you are running use the following PowerShell command:
+   To check which version of WSL you are running use the following <mark>PowerShell</mark> command:
    ```
    wsl --list
    ```
@@ -62,11 +62,11 @@
    ```
    wsl --list --verbose
    ```
-   It is recommended that you regularly update and upgrade your packages:
+   It is recommended that you regularly update and upgrade your packages. Type the following command in the <mark>WSL</mark> terminal:
    ```
    sudo apt update -y && sudo apt upgrade -y
    ```
-4. **WSL and GUI apps**<br><br>
+5. **WSL and GUI apps**<br><br>
    Since 2025-08-06 WSL supports running Linux GUI applications (X11 and Wayland) on Windows.<br><br>
    X11 has been for years the dominant display server protocol for Unix-like windowing systems.<br>
    Wayland was introduced in 2008 as a new protocol and a modern replacement for X11.<br>
@@ -89,11 +89,11 @@
    - Use alt-tab to switch between Linux and Windows apps
    - Cut + Paste across Windows and Linux apps
 
-5. **Accessing the WSL file system from Windows**<br><br>
+6. **Accessing the WSL file system from Windows**<br><br>
    From the Power Shell terminal run the following command:<br>
    `explorer \\wsl$\Ubuntu-24.04\home\<linux username>`<br>
 
-6. **Accessing the Windows file system from WSL**<br><br>
+7. **Accessing the Windows file system from WSL**<br><br>
    `cd /mnt/c/Users/<windows username>`<br>
    To make it easier to navigate the windows file system, cosider adding symbolic links.<br>
 
@@ -106,8 +106,8 @@
       ln -s /mnt/c/Users/claudio/icloudDrv/iCloudDrive ~/ihome
       ```
    ---
-7. **[Install Docker Desktop on Windows](https://docs.docker.com/desktop/setup/install/windows-install/)**
-8. **Start Docker Desktop and configure it**<br><br>
+8. **[Install Docker Desktop on Windows](https://docs.docker.com/desktop/setup/install/windows-install/)**
+9. **Start Docker Desktop and configure it**<br><br>
    Start Docker and open the **Settings** wheel at the top of the menu bar.<br> 
    Go to the tab **General** and make sure the "Use the WSL 2 based engine" option is enabled.
     <p align="center">
