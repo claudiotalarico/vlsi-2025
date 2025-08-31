@@ -1,2 +1,4 @@
-# UNCONFIGURED FSTAB FOR BASE SYSTEM
+# FSTAB FOR BASE SYSTEM
+# C: /mnt/c drvfs defaults 0 0
+C: /mnt/c drvfs rw,uid=1000,gid=1000 0 0
 G: /mnt/g drvfs rw,uid=1000,gid=1000 0 0
