@@ -235,7 +235,7 @@
     ```
     DESIGNS=$HOME/ghome/eda/designs
     ```
-    or even better leave the `start_x.sh` script alone and overwrite the variable definition in the current shell session as explained earlier <br><br>
+    or leave the `start_x.sh` script alone and overwrite the variable definition in the current shell session as explained earlier <br><br>
     
     ---
     
