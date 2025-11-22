@@ -30,7 +30,7 @@
    ```
    You will be prompted to create a UNIX username and password.<br>
    This UNIX username and password have no relationship to your Windows username and password.<br>
-   To avoid any confusion use a different username<br>
+   To avoid any confusion **use a different username**<br>
  
 4. **Start WSL**<br><br>
    In general, to start using WSL, either open a PowerShell terminal and type:
