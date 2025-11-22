@@ -135,7 +135,7 @@
     ... But, before we can successfully run the script `./start_x.sh` there are a few more steps that needs to be to completed:
     1. Install and run an Xserver for Windows (MobaXterm)
     2. The `.Xauthority` file
-    3. Set the `DESIGNS` variable inside `./start_x.sh`
+    3. Set the `DESIGNS` variable inside `./start_x.sh` (or better overwriting the variable definition in the current shell session)
     4. Install a few required additional Linux packages
    
 12. **Install and start [MobaXterm Home Edition](https://mobaxterm.mobatek.net/download.html)** <br><br>
@@ -159,7 +159,7 @@
 14. **Set the `DESIGNS` variable**<br><br>
     In the script `start_x.sh`, all user data is persistently mounted in the directory pointed to by the environment variable `DESIGNS`<br>
     The default is `$HOME/eda/designs`<br>
-    To change where the user data is mounted you can edit the `start_x.sh` script and modify the definition of the variable `DESIGNS` or better leave the `start_x.sh` script alone and overwrite the variable definition in the current shell session<br><br>
+    To change where the user data is mounted you can edit the `start_x.sh` script and modify the definition of the variable `DESIGNS` or even better leave the `start_x.sh` script alone and overwrite the variable definition in the current shell session<br><br>
 
     ---
     **Example**<br>
@@ -233,6 +233,8 @@
     ```
     DESIGNS=$HOME/ghome/eda/designs
     ```
+    or even better leave the `start_x.sh` script alone and overwrite the variable definition in the current shell session as explained earlier <br><br>
+    
     ---
     
 16. **Install a few additional required Linux packages**<br>
