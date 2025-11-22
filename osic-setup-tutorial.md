@@ -137,7 +137,7 @@
     ... But, before we can successfully run the script `./start_x.sh` there are a few more steps that needs to be to completed:
     1. Install and run an Xserver for Windows (MobaXterm)
     2. The `.Xauthority` file
-    3. Set the `DESIGNS` variable inside `./start_x.sh` (or better overwriting the variable definition in the current shell session)
+    3. Set the `DESIGNS` variable inside `./start_x.sh` (or better overwrite the variable definition in the current shell session)
     4. Install a few required additional Linux packages
    
 12. **Install and start [MobaXterm Home Edition](https://mobaxterm.mobatek.net/download.html)** <br><br>
