@@ -2,7 +2,7 @@
 
 To set up JKU's open source integrated circuits (osic) EDA tools on Windows OS follow this [step by step tutorial](./osic-setup-tutorial.md)
 
-## Useful Links
+## Other Useful Links
 - [WSL Documentation](https://learn.microsoft.com/en-us/windows/wsl/)
 - [Docker Documentation](https://docs.docker.com/)
 - [MobaXterm](https://mobaxterm.mobatek.net/) Click on the **Help** tab for the documentation 
