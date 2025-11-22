@@ -159,8 +159,16 @@
 14. **Set the `DESIGNS` variable**<br><br>
     In the script `start_x.sh`, all user data is persistently mounted in the directory pointed to by the environment variable `DESIGNS`<br>
     The default is `$HOME/eda/designs`<br>
-    To change where the user data is mounted edit the `start_x.sh` script and modify the definition of the variable `DESIGNS`<br><br>
-    
+    To change where the user data is mounted you can edit the `start_x.sh` script and modify the definition of the variable `DESIGNS` or better leave the `start_x.sh` script alone and overwrite the variable definition in the current shell session<br><br>
+
+    ---
+    **Example**<br>
+    ```
+    export DESIGNS=$HOME/ghome/eda/designs
+    ./start_x.sh
+    ```
+    ---
+
     ---
     **Example**<br>
     To have all designs' data accessible from multiple platforms and multiple OS, I am going to set the `DESIGNS` variable to point to my own Google Drive.<br>
@@ -227,13 +235,13 @@
     ```
     ---
     
-15. **Install a few additional required Linux packages**<br>
+16. **Install a few additional required Linux packages**<br>
     ```
     sudo apt -y install socat
     sudo apt -y install x11-xserver-utils
     ```
     
-16. **Start the iic-osic-tools container**<br><br>
+17. **Start the iic-osic-tools container**<br><br>
     Browse to the location of the `start_x.sh` script:
     ```
     cd ~/iic-osic-tools
@@ -249,7 +257,7 @@
     echo $IIC_OSIC_TOOLS_VERSION
     ```
 
-17. **Install VS Code and the WSL extension**<br><br>
+18. **Install VS Code and the WSL extension**<br><br>
     Visual Studio Code, along with the WSL extension, enables you to use WSL as your full-time development environment directly from VS Code.<br>
     - Visit the [VS Code install](https://code.visualstudio.com/download) page and select the **Windows installer** for your current system architecture.<br>
       Install Visual Studio Code on Windows (**not in WSL**).
