@@ -43,10 +43,6 @@
    The Windows user's home directory is:<br>
    `/mnt/c/Users/<windows username>`<br><br>
 
-   To check the version of Ubuntu installed type the following Linux command in the WSL terminal:<br>
-   ```
-   cat /etc/os-release
-   ```
    ---
    **Example**<br>
    >`talarico@TALARICO-SRFCBK:~$ pwd`<br>
@@ -55,6 +51,12 @@
    >`talarico@TALARICO-SRFCBK:~$ cd /mnt/c/Users/claudio/`<br>
    >`talarico@TALARICO-SRFCBK:/mnt/c/Users/claudio$`
    ---
+
+   To check the version of Ubuntu installed type the following Linux command in the WSL terminal:<br>
+   ```
+   cat /etc/os-release
+   ```
+   
    To check which version of WSL you are running use the following <mark>PowerShell</mark> command:
    ```
    wsl --list
@@ -67,7 +69,7 @@
    ```
    sudo apt update -y && sudo apt upgrade -y
    ```
-5. **WSL and GUI apps**<br><br>
+6. **WSL and GUI apps**<br><br>
    Since 2025-08-06 WSL supports running Linux GUI applications (X11 and Wayland) on Windows.<br><br>
    X11 has been for years the dominant display server protocol for Unix-like windowing systems.<br>
    Wayland was introduced in 2008 as a new protocol and a modern replacement for X11.<br>
@@ -90,11 +92,11 @@
    - Use alt-tab to switch between Linux and Windows apps
    - Cut + Paste across Windows and Linux apps
 
-6. **Accessing the WSL file system from Windows**<br><br>
+7. **Accessing the WSL file system from Windows**<br><br>
    From the Power Shell terminal run the following command:<br>
    `explorer \\wsl$\Ubuntu-24.04\home\<linux username>`<br>
 
-7. **Accessing the Windows file system from WSL**<br><br>
+8. **Accessing the Windows file system from WSL**<br><br>
    `cd /mnt/c/Users/<windows username>`<br>
    To make it easier to navigate the windows file system, cosider adding symbolic links.<br>
 
@@ -107,8 +109,8 @@
       ln -s /mnt/c/Users/claudio/icloudDrv/iCloudDrive ~/ihome
       ```
    ---
-8. **[Install Docker Desktop on Windows](https://docs.docker.com/desktop/setup/install/windows-install/)**
-9. **Start Docker Desktop and configure it**<br><br>
+9. **[Install Docker Desktop on Windows](https://docs.docker.com/desktop/setup/install/windows-install/)**
+10. **Start Docker Desktop and configure it**<br><br>
    Start Docker and open the **Settings** wheel at the top of the menu bar.<br> 
    Go to the tab **General** and make sure the "Use the WSL 2 based engine" option is enabled.
     <p align="center">
