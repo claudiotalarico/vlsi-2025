@@ -252,7 +252,7 @@
     ```
     and start the script:
     ```
-    export DESIGNS=$HOME/ghome/eda/designs
+    $DESIGNS="$HOME/ghome/eda/designs"
     export DOCKER_TAG="latest"
     ./start_x.sh
     ```
