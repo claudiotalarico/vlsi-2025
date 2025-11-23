@@ -169,16 +169,16 @@
     ```
     ln -s /mnt/g/My\ Drive/ ~/ghome
     ```
-    Then run the CLI commands: 
+    Then run the following CLI commands: 
     ```
     export DESIGNS=$HOME/ghome/eda/designs
     ./start_x.sh
     ```
     
-    other valid syntax to define the variable `DESIGNS` are also:<br>
+    Other valid ways to define the variable `DESIGNS` are also:<br>
     `export DESIGNS="$HOME/ghome/eda/designs"`<br>
-    `export DESIGNS=$HOME/Google\ Drive/My\ Drive/eda/designs`<br>
-    `export DESIGNS=$HOME/Google\ Drive/My\ Drive/eda/designs`
+    `export DESIGNS=/mnt/g/My\ Drive/eda/designs`<br>
+    `export DESIGNS="/mnt/g/My Drive/eda/designs"`
  
     ---
 
@@ -261,9 +261,9 @@
     ```
     cd ~/iic-osic-tools
     ```
-    and start the script:
+    and run the following CLI commands:
     ```
-    $DESIGNS="$HOME/ghome/eda/designs"
+    export DESIGNS="$HOME/ghome/eda/designs"
     export DOCKER_TAG="latest"
     ./start_x.sh
     ```
