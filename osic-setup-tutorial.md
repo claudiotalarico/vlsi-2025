@@ -165,10 +165,21 @@
 
     ---
     **Example**<br>
+    To have all designs' data accessible from multiple platforms and multiple OS, I am going to set the DESIGNS variable to point to my own Google Drive, and for convenience create a link to it.
+    ```
+    ln -s /mnt/g/My\ Drive/ ~/ghome
+    ```
+    Then run the CLI commands: 
     ```
     export DESIGNS=$HOME/ghome/eda/designs
     ./start_x.sh
     ```
+    
+    other valid syntax to define the variable `DESIGNS` are also:<br>
+    `export DESIGNS="$HOME/ghome/eda/designs"`<br>
+    `export DESIGNS=$HOME/Google\ Drive/My\ Drive/eda/designs`<br>
+    `export DESIGNS=$HOME/Google\ Drive/My\ Drive/eda/designs`
+ 
     ---
 
     ---
