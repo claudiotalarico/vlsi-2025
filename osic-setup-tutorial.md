@@ -252,6 +252,8 @@
     ```
     and start the script:
     ```
+    export DESIGNS=$HOME/ghome/eda/designs
+    export DOCKER_TAG="latest"
     ./start_x.sh
     ```
     If everything goes as it should, you will see a terminal with the prompt `/foss/designs >`<br>
