@@ -326,3 +326,9 @@
    
       Too see only the installed extensions type **`@installed`** in the "Search Extensions in Marketplace" bar
 
+      List of useful short-cuts to remember:
+
+      **Ctrl + `** - View: Toggle Terminal
+      
+      **Cmd + s** - File: Save 
+
