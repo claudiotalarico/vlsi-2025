@@ -330,5 +330,6 @@
 
       **Ctrl + `** - View: Toggle Terminal
       
-      **Cmd + s** - File: Save 
+      **Cmd + S** - File: Save 
 
+      **Cmd + Shift + P** - View: Command Palette ...
