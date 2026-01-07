@@ -172,6 +172,7 @@
     Then run the following CLI commands: 
     ```
     export DESIGNS=$HOME/ghome/eda/designs
+    export DOCKER_TAG="latest"
     ./start_x.sh
     ```
     
