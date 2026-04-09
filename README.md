@@ -1,7 +1,7 @@
 # VLSI-2025
 
 To set up JKU's open source integrated circuits (osic) EDA tools on Windows OS (my way) follow this <br>
-[step by step tutorial](./osic-setup-tutorial.md)
+[step by step tutorial](./osic-setup-tutorial.md) (or this other [step by step tutorial]() on mac OS) 
 
 ## Other Useful Links
 - [WSL Documentation](https://learn.microsoft.com/en-us/windows/wsl/)
